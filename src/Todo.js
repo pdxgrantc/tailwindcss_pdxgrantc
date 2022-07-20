@@ -9,14 +9,22 @@ export default function Todo({ todo, toggleTodo }) {
         <>
             <div className=''>
                 <label>
-                    <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} className="text-color-green" />
-                    <p> {todo.title} </p>
-                    <div className='flex'>
-                        <p> {todo.dueDay} </p>
-                        <p> {todo.dueMonth} </p>
-                        <p> {todo.dueYear} </p>
+                    <div class='flex gap-3'>
+                        <div>
+                            <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} className="text-color-green" />
+                        </div>
+                        <div>
+                            <p> {todo.title} </p>
+                            <div className='flex'>
+                                <p>Due: &nbsp;</p>
+                                <p> {todo.dueDay}-</p>
+                                <p> {todo.dueMonth}- </p>
+                                <p> {todo.dueYear} </p>
+                            </div>
+
+                            <p> {todo.todoDescription} </p>
+                        </div>
                     </div>
-                    <p> {todo.todoDescription} </p>
                 </label>
             </div>
         </>
