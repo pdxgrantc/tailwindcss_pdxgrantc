@@ -5,11 +5,11 @@ import inLogo from "./images/inLogo.png"
 export default function Footer() {
     return (
         <div class="flex flex-col gap-3">
-            <div class="flex gap-6 justify-center">
-                <a class="w-1/12 h-auto hover:invert" href="https://www.linkedin.com/in/pdxgrantc/">
+            <div class="w-1/4 flex gap-6 self-center m-auto">
+                <a class="h-auto hover:invert w-3/12" href="https://www.linkedin.com/in/pdxgrantc/">
                     <img id="inLogo" src={inLogo} alt="Linkedin"></img>
                 </a>
-                <a class="w-1/12 h-auto hover:invert" href="https://github.com/pdxgrantc/">
+                <a class=" h-auto hover:invert w-3/12" href="https://github.com/pdxgrantc/">
                     <img src={githubLogo} alt="GitHub"></img>
                 </a>
             </div>
