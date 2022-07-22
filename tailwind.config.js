@@ -17,7 +17,7 @@ module.exports = {
       text_white: '#d6d6d6',
       button_color: '#262d40',
       button_pressed_color: '#475266',
-
+      accent_text_color: '#525252',
     },
     screens: {
       mobile: { 'max': '950px' },

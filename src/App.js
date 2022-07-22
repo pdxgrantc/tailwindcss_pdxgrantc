@@ -63,25 +63,27 @@ function App() {
   /*<div>{todos.filter(todo => !todo.complete).length} items left to do</div>*/
 
   return (
-    <div class="w-[75%] m-auto">
+    <div class="w-[75%] m-auto bg-main_bg_color text-text_white">
       <Header />
       <div>
         <div class="flex flex-row gap-8">
           <TodoList todos={todos} toggleTodo={toggleTodo} />
         </div>
       </div>
-      <div class="w-full flex flex-col gap-[2vh]">
-        <input class="h-[3.5vh] w-full" ref={todoNameRef} type="text" placeholder='&nbsp; Title' />
-        <div class="h-[3.5vh] grid grid-cols-3 gap-[1vw] w-full">
-          <input class="h-full" ref={day} type="text" placeholder='&nbsp; Due Day' />
-          <input class="h-full" ref={month} type="text" placeholder='&nbsp; Due Month' />
-          <input class="h-full" ref={year} type="text" placeholder='&nbsp; Due Year' />
+      <div class="flex flex-col justify-center gap-[2.75vh]">
+        <div class="w-full flex flex-col gap-[2.3vh] text-[1.75rem] leading-none">
+          <input class="h-[4.75vh] px-[.75vw] py-[.5vh] w-full text-accent_text_color focus:shadow-none focus:outline-none" ref={todoNameRef} type="text" placeholder='Title' />
+          <div class="h-[4.75vh] grid grid-cols-3 gap-[1vw] w-full">
+            <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={day} type="text" placeholder='Due Day' />
+            <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={month} type="text" placeholder='Due Month' />
+            <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={year} type="text" placeholder='Due Year' />
+          </div>
+          <textarea class="px-[.75vw] py-[1.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={description} placeholder="Description" cols="30" rows="15"></textarea>
         </div>
-        <textarea ref={description} placeholder="&nbsp; Description" cols="30" rows="10"></textarea>
-        <button class="m-auto w-fit px-[1.5vw] py-[.75vw] text-4xl font-semibold bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleAddTodo}>Submit</button>
-        <button class="hidden bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleClearTodos}>Clear Complete</button>
+        <button class="self-center m-auto w-fit px-[1.5vw] py-[.75vw] text-4xl font-semibold bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleAddTodo}>Submit</button>
       </div>
       <Footer />
+      <button class="hidden bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleClearTodos}>Clear Complete</button>
     </div >
   )
 }

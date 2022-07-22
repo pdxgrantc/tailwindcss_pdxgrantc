@@ -21,7 +21,6 @@ export default function Todo({ todo, toggleTodo }) {
                                 <p> {todo.dueMonth}- </p>
                                 <p> {todo.dueYear} </p>
                             </div>
-
                             <p> {todo.todoDescription} </p>
                         </div>
                     </div>
