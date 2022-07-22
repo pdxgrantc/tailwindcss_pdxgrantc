@@ -7,10 +7,10 @@ export default function Footer() {
         <>
             <div class="mt-[4vh] flex flex-col justify-center">
                 <div class="m-auto justify-center flex w-1/4 gap-20 mobile:w-1/3 mobile:gap-12 ">
-                    <a class="h-auto w-[10%] min-w-[5rem] mobile:w-1/2 hover:invert" href="https://www.linkedin.com/in/pdxgrantc/">
+                    <a class="h-auto w-[10%] min-w-[4rem] mobile:w-1/2 hover:invert" href="https://www.linkedin.com/in/pdxgrantc/">
                         <img id="inLogo" src={inLogo} alt="Linkedin"></img>
                     </a>
-                    <a class="h-auto w-[10%] min-w-[5rem] mobile:w-1/2 hover:invert" href="https://github.com/pdxgrantc/">
+                    <a class="h-auto w-[10%] min-w-[4rem] mobile:w-1/2 hover:invert" href="https://github.com/pdxgrantc/">
                         <img src={githubLogo} alt="GitHub"></img>
                     </a>
                 </div>

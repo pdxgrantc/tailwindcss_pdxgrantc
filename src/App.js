@@ -63,26 +63,26 @@ function App() {
   /*<div>{todos.filter(todo => !todo.complete).length} items left to do</div>*/
 
   return (
-    <>
+    <div class="w-[75%] m-auto">
       <Header />
       <div>
         <div class="flex flex-row gap-8">
           <TodoList todos={todos} toggleTodo={toggleTodo} />
         </div>
       </div>
-      <div class="w-full flex flex-col gap-4">
-        <input class="w-full" ref={todoNameRef} type="text" placeholder='Title' />
-        <div class="grid grid-cols-3 gap-3 w-full">
-          <input ref={day} type="text" placeholder='Due Day' />
-          <input ref={month} type="text" placeholder='Due Month' />
-          <input ref={year} type="text" placeholder='Due Year' />
+      <div class="w-full flex flex-col gap-[2vh]">
+        <input class="h-[3.5vh] w-full" ref={todoNameRef} type="text" placeholder='&nbsp; Title' />
+        <div class="h-[3.5vh] grid grid-cols-3 gap-[1vw] w-full">
+          <input class="h-full" ref={day} type="text" placeholder='&nbsp; Due Day' />
+          <input class="h-full" ref={month} type="text" placeholder='&nbsp; Due Month' />
+          <input class="h-full" ref={year} type="text" placeholder='&nbsp; Due Year' />
         </div>
-        <textarea ref={description} placeholder="Description" cols="30" rows="10"></textarea>
-        <button class="w-fit self-center bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleAddTodo}>Submit Todo</button>
+        <textarea ref={description} placeholder="&nbsp; Description" cols="30" rows="10"></textarea>
+        <button class="m-auto w-fit px-[1.5vw] py-[.75vw] text-4xl font-semibold bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleAddTodo}>Submit</button>
         <button class="hidden bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleClearTodos}>Clear Complete</button>
       </div>
       <Footer />
-    </>
+    </div >
   )
 }
 
