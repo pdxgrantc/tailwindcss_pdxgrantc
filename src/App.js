@@ -63,7 +63,7 @@ function App() {
   /*<div>{todos.filter(todo => !todo.complete).length} items left to do</div>*/
 
   return (
-    <div class="w-3/4 m-auto font-['arial'] text-lg">
+    <div class="w-seventy_five_vw m-auto font-['arial'] text-lg bg-main_bg_color text-text_white">
       <Header />
       <div>
         <div class="flex flex-row gap-8">
@@ -78,8 +78,8 @@ function App() {
           <input ref={year} type="text" placeholder='Due Year' />
         </div>
         <textarea ref={description} placeholder="Description" cols="30" rows="10"></textarea>
-        <button onClick={handleAddTodo}>Add Todo</button>
-        <button onClick={handleClearTodos}>Clear Complete</button>
+        <button class="w-fit self-center bg-button_color hover:bg-button_pressed_color" onClick={handleAddTodo}>Submit Todo</button>
+        <button class="hidden bg-button_color hover:bg-button_pressed_color" onClick={handleClearTodos}>Clear Complete</button>
       </div>
       <Footer />
     </div>
