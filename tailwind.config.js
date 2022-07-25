@@ -22,7 +22,7 @@ module.exports = {
     screens: {
       mobile: { 'max': '950px' },
       // => @media (max-width: 950px) { ... }
-      small_desktop: { 'max': '1350px' },
+      laptop_height: { 'min': '1000px' },
       // => @media (max-width: 1350px) { ... }
     },
     extend: {},
