@@ -78,7 +78,7 @@ function App() {
             <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={month} type="text" placeholder='Due Month' />
             <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={year} type="text" placeholder='Due Year' />
           </div>
-          <textarea class="px-[.75vw] py-[1.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={description} placeholder="Description" cols="30" rows="12"></textarea>
+          <textarea class="px-[.75vw] py-[1.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={description} placeholder="Description" cols="30" rows="15"></textarea>
         </div>
         <button class="self-center m-auto w-fit px-[1.5vw] py-[.75vw] text-4xl font-semibold bg-button_color hover:bg-button_pressed_color hover:cursor-pointer" onClick={handleAddTodo}>Submit</button>
       </div>
