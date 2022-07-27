@@ -6,16 +6,12 @@ import NewItem from "./NewItem/NewItem"
 
 function App() {
   return (
-
     <Router>
-
       <Switch>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<NewItem />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/new-item" element={<NewItem />} />
       </Switch>
-
     </Router>
-
   )
 }
 
