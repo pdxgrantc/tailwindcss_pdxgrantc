@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Routes as Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 
-import HomePage from "./HomePage/HomePage"
+import HomePage from "./ToDoHomePage/ToDoHomePage"
 import NewItem from "./NewItem/NewItem"
 
 function App() {
