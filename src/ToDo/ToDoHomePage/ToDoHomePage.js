@@ -68,7 +68,7 @@ export default function ToDoHomePage() {
 
   return (
     <>
-      <div class="w-[75%] m-auto bg-main_bg_color text-text_white">
+      <div class="w-[90%] m-auto bg-main_bg_color text-text_white">
         <Header />
         <div>
           <div class="flex flex-row gap-8">

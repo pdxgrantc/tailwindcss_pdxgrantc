@@ -13,11 +13,12 @@ module.exports = {
       current: 'currentColor',
       black: '#000',
       white: '#fff',
-      main_bg_color: '#121824',
+      main_bg_color: '#181824',
       text_white: '#d6d6d6',
       button_color: '#262d40',
       button_pressed_color: '#475266',
       accent_text_color: '#525252',
+      accent_button_color: '#5121e5',
     },
     screens: {
       mobile: { 'max': '950px' },
