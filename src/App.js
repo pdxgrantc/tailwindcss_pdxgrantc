@@ -1,15 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 
-import HomePage from "./ToDoHomePage/ToDoHomePage"
-import NewItem from "./NewItem/NewItem"
+import Home from "./Home";
+import ToDoHomePage from "./ToDo/ToDoHomePage/ToDoHomePage"
+import NewItem from "./ToDo/NewItem/NewItem"
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/new-item" element={<NewItem />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/ToDo" element={<ToDoHomePage />} />
+        <Route path="/ToDo/new-item" element={<NewItem />} />
       </Switch>
     </Router>
   )
