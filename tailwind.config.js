@@ -15,6 +15,7 @@ module.exports = {
       white: '#fff',
       main_bg_color: '#181824',
       text_white: '#d6d6d6',
+      text_grey: '#b1b1b1',
       button_color: '#262d40',
       button_pressed_color: '#475266',
       accent_text_color: '#525252',
