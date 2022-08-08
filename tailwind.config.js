@@ -10,16 +10,15 @@ module.exports = {
   theme: {
     colors: {
       transparent: 'transparent',
-      current: 'currentColor',
       black: '#000',
       white: '#fff',
-      main_bg_color: '#181824',
+      main_bg_color: '#181823',
       text_white: '#d6d6d6',
       text_grey: '#b1b1b1',
-      button_color: '#262d40',
       button_pressed_color: '#475266',
-      accent_text_color: '#525252',
-      accent_button_color: '#5121e5',
+      button_accent_color: '#5121e5',
+      text_blue: "#609bff",
+      text_pink: "#e95d90",
     },
     screens: {
       mobile: { 'max': '950px' },

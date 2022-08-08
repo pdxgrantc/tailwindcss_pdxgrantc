@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Resume from './Resume'
+
 import Header from '../partials/Header'
 import Footer from '../partials/Footer'
 
@@ -15,10 +17,13 @@ export default function Home() {
                     <img class="h-[88vh] w-auto" src={Grant_Photo} alt="Grant"></img>
                     <div class="absolute right-[5vw] bottom-[40vh]">
                         <h2 class="text-[4.5rem] font-bold mobile:text-4xl">I'm Grant Conklin</h2>
-                        <h3 class="text-[3.5rem] font-semibold mobile:text-4xl text-text_grey">I'm a Full Stack Web Developer</h3>
+                        <h3 class="text-[3.5rem] font-semibold mobile:text-4xl ">Full Stack Web Developer</h3>
                         <h3 class="text-[3.5rem] font-semibold mobile:text-4xl text-text_grey">Student at Oregon State University</h3>
                     </div>
                 </div>
+                <div class="w-[35vw] h-[5vh] bg-black"></div>
+                <Resume />
+                <div class="mb-[8vh]"></div>
                 <Footer />
             </div>
         </>
