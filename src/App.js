@@ -10,8 +10,8 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" element={<Home />} />
-        <Route path="/Pages/ToDo" element={<ToDoHomePage />} />
-        <Route path="/Pages/ToDo/new-item" element={<NewItem />} />
+        <Route path="/ToDo" element={<ToDoHomePage />} />
+        <Route path="/ToDo/new-item" element={<NewItem />} />
       </Switch>
     </Router>
   )
