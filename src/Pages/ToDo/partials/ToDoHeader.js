@@ -26,7 +26,7 @@ export default function ToDoHeader() {
             <div class="pr-[5vw] flex text-[2.75rem] font-semibold mobile:text-4xl">
                 <Link class="h-fit align-middle px-[1vw] py-[.5vw] hover:bg-button_pressed_color hover:cursor-pointer hover:ease-in-out duration-[150ms]" to="/">Home</Link>
                 <Link class="h-fit align-middle px-[1vw] py-[.5vw] hover:bg-button_pressed_color hover:cursor-pointer hover:ease-in-out duration-[150ms]" to="/ToDo">Apps</Link>
-                <Link class="h-fit align-middle px-[1vw] py-[.5vw] bg-button_accent_color hover:bg-transparent hover:cursor-pointer hover:ease-in-out duration-[350ms]" to="/ToDo/new-item">New Item</Link>
+                <Link class="h-fit align-middle px-[1vw] py-[.5vw] bg-button_accent_color hover:bg-transparent hover:cursor-pointer hover:ease-in-out duration-[350ms]" to="/ToDo/New-Item">New Item</Link>
             </div>
         </div>
     )
