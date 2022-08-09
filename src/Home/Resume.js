@@ -29,10 +29,10 @@ export default function Resume() {
                     <div class="flex gap-[10vw] mt-[2vh] text-4xl">
                         <div class="text-[2.75rem]">
                             <div>
-                                <h5>Student Technology Consultant</h5>
-                                <h6 class="pt-[.75rem] text-[1.65rem]">Oregon State University College of Forestry</h6>
+                                <h5>Free Geek Portland</h5>
+                                <h6 class="pt-[.75rem] text-[1.65rem]">Electronics Recycling</h6>
                             </div>
-                            <p class="text-[1.2rem]">Individual user computer support setup and software assistance.</p>
+                            <p class="text-[1.2rem]">Taking apart and sorting computer compnents to avoid e-waste.</p>
                         </div>
                     </div>
                 </div>

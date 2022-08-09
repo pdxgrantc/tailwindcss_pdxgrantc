@@ -2,7 +2,7 @@ import React from 'react'
 
 import Resume from './Resume'
 
-import Header from '../partials/Header'
+import Header from './partials/HomeHeader'
 import Footer from '../partials/Footer'
 
 import Grant_Photo from "./Grant-Photo.jpg"
