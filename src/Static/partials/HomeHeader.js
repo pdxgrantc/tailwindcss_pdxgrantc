@@ -5,7 +5,7 @@ export default function HomeHeader({title}) {
     var special_nav = "About This Site"
     var title_link = "/"
     var special_link = "/About-This-Site"
-    if (title == undefined) {
+    if (title === undefined) {
         title = "Grant Conklin"
         title_link = "/"
     }
@@ -13,7 +13,7 @@ export default function HomeHeader({title}) {
         special_nav = "Home"
     }
 
-    if (title == "About This Site") {
+    if (title === "About This Site") {
         title_link = "/About-This-Site"
         special_link = "/"
     }
