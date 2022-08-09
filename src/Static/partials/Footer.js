@@ -1,6 +1,6 @@
 import React from 'react'
-import githubLogo from "../images/githubLogo.png"
-import inLogo from "../images/inLogo.png"
+import githubLogo from "../Images/githubLogo.png"
+import inLogo from "../Images/inLogo.png"
 
 export default function Footer() {
     return (

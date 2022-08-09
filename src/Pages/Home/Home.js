@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Resume from './Resume'
+import Resume from './partials/Resume'
 
 import Header from './partials/HomeHeader'
-import Footer from '../partials/Footer'
+import Footer from '../../Static/partials/Footer'
 
 import Grant_Photo from "./Grant-Photo.jpg"
 //<img class="h-[calc(100%-76px)]" src={Grant_Photo} alt="Grant"></img>
