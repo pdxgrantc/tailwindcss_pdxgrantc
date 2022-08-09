@@ -68,7 +68,7 @@ export default function NewItem() {
     <>
       <div class="m-auto bg-main_bg_color text-text_white">
         <Header />
-        <div class="mb-[4vh]"></div>
+        <div class="h-[6vh]"></div>
         <div class="w-[75%] m-auto flex flex-col justify-center gap-[2.75vh]">
           <div class="w-full flex flex-col gap-[2.3vh] text-[1.75rem] min-laptop_height:text-[1.5rem] leading-none">
             <input class="h-[4.75vh] px-[.75vw] py-[.5vh] w-full text-accent_text_color focus:shadow-none focus:outline-none" ref={todoNameRef} type="text" placeholder='Title' />

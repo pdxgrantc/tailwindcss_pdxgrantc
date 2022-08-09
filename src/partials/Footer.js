@@ -18,6 +18,7 @@ export default function Footer() {
                 <div class="m-auto w-fit text-[1.25rem]">
                     <h3 class="">Grant Conklin | pdxgrantc@gmail.com | 2022</h3>
                 </div>
+                <div class="mb-[8vh]"></div>
             </div>
         </>
     )
