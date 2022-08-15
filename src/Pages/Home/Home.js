@@ -14,8 +14,8 @@ export default function Home() {
             <div class="m-auto bg-main_bg_color text-text_white">
                 <Header />
                 <div class="relative">
-                    <img class="h-[88vh] w-auto" src={Grant_Photo} alt="Grant"></img>
-                    <div class="absolute right-[5vw] bottom-[40vh]">
+                    <img class="max-w-[50vw] h-[88vh] w-auto" src={Grant_Photo} alt="Grant"></img>
+                    <div class="max-w-[43vw] pl-[2vw] absolute right-[5vw] bottom-[40vh]">
                         <h2 class="text-[4.5rem] font-bold mobile:text-4xl">I'm Grant Conklin</h2>
                         <h3 class="text-[3.5rem] font-semibold mobile:text-4xl ">Full Stack Web Developer</h3>
                         <h3 class="text-[3.5rem] font-semibold mobile:text-4xl text-text_grey">Student at Oregon State University</h3>
