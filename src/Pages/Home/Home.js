@@ -13,7 +13,7 @@ export default function Home() {
         <>
             <div class="m-auto bg-main_bg_color text-text_white">
                 <Header />
-                <div class="relative">
+                <div class="relative hidden">
                     <img class="max-w-[50vw] h-[88vh] w-auto" src={Grant_Photo} alt="Grant"></img>
                     <div class="max-w-[43vw] pl-[2vw] absolute right-[5vw] bottom-[40vh]">
                         <h2 class="text-[4.5rem] font-bold mobile:text-4xl">I'm Grant Conklin</h2>
@@ -21,7 +21,7 @@ export default function Home() {
                         <h3 class="text-[3.5rem] font-semibold mobile:text-4xl text-text_grey">Student at Oregon State University</h3>
                     </div>
                 </div>
-                <div class="w-[35vw] h-[5vh] bg-black"></div>
+                <div class="w-[35vw] h-[5vh] bg-black on_mobile:hidden"></div>
                 <Resume />
                 <div class="mb-[8vh]"></div>
                 <Footer />

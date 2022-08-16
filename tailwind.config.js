@@ -21,9 +21,8 @@ module.exports = {
       text_pink: "#e95d90",
     },
     screens: {
-      show_on_mobile: { 'min': '951px'},
-      show_on_desktop: { 'max': '950px' },
-      mobile: { 'max': '950px' },
+      on_desktop: { 'min': '951px'},
+      on_mobile: { 'max': '950px' },
       // => @media (max-width: 950px) { ... }
       min_laptop_height: { 'min': '1000px' },
       // => @media (min-width: 1350px) { ... }
