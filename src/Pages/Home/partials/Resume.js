@@ -10,7 +10,7 @@ export default function Resume() {
                     <h4 class="py-[1.25vh] text-6xl text-text_blue">Past Employment</h4>
                     <div class="flex on_mobile:flex-col gap-[10vw] mt-[2vh] text-4xl">
                         <div class="text-[2.75rem]">
-                            <div>
+                            <div class="on_mobile:pb-3">
                                 <h5 class="on_mobile:leading-[2.8rem] on_mobile:pb-2">Student Technology Consultant</h5>
                                 <h6 class="pt-[.75rem] text-[1.65rem] on_mobile:leading-[2rem]">Oregon State University College of Forestry</h6>
                             </div>
@@ -24,11 +24,11 @@ export default function Resume() {
                             <p class="text-[1.2rem] on_mobile:leading-[1.4rem]">Individual user computer support setup and software assistance.</p>
                         </div>
                     </div>
-                    <div class="h-[8vh] on_mobile:h-[6vh]"></div>
+                    <div class="h-[6vh] on_mobile:h-[6vh]"></div>
                     <h4 class="py-[1.25vh] text-6xl text-text_pink">Volunteering Experiences</h4>
-                    <div class="flex gap-[10vw] mt-[2vh] text-4xl">
+                    <div class="flex on_mobile:flex-col gap-[10vw] mt-[2vh] text-4xl">
                         <div class="text-[2.75rem]">
-                            <div>
+                            <div class="on_mobile:pb-3">
                                 <h5 class="on_mobile:leading-[2.8rem] on_mobile:pb-2">Free Geek Portland</h5>
                                 <h6 class="pt-[.75rem] text-[1.65rem] on_mobile:leading-[2rem]">Electronics Recycling</h6>
                             </div>

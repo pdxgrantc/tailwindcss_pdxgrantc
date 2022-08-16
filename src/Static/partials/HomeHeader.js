@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 import githubLogo from "../Images/githubLogo.png"
@@ -39,15 +42,17 @@ export default function HomeHeader({ title }) {
                     <Link class="w-[35vw] bg-black pl-[5vw] text-4xl font-bold leading-[5.75rem] h-[12vh]" to={title_link}>
                         <img id="inLogo" src={githubLogo} alt="Linkedin"></img>
                     </Link>
-                    <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            Dropdown Button
-                        </Dropdown.Toggle>
-
+                    <Dropdown as={ButtonGroup}>
+                        <div class="bg-black">
+                            <Button variant="success">Links</Button>
+                            <Dropdown.Toggle split variant="success" id="dropdown-split-basic" class="w-5 h-5" />
+                        </div>
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            <div class="flex flex-col">
+                                <Dropdown.Item><Link to="/Code">Code</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to="/ToDo">Apps</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to={special_link}>{special_nav}</Link></Dropdown.Item>
+                            </div>
                         </Dropdown.Menu>
                     </Dropdown>
                     <div class="hidden pr-[5vw] font-semibold">
