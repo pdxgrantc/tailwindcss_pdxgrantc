@@ -1,12 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Dropdown from 'react-bootstrap/Dropdown';
-
-import githubLogo from "../Images/githubLogo.png"
-
 export default function HomeHeader({ title }) {
     var special_nav = "About This Site"
     var title_link = "/"
@@ -37,30 +31,11 @@ export default function HomeHeader({ title }) {
                     </div>
                 </div>
             </div>
-            <div class="on_desktop:hidden">
-                <div class="flex justify-between text-4xl">
-                    <Link class="w-[35vw] bg-black pl-[5vw] text-4xl font-bold leading-[5.75rem] h-[12vh]" to={title_link}>
-                        <img id="inLogo" src={githubLogo} alt="Linkedin"></img>
-                    </Link>
-                    <Dropdown as={ButtonGroup}>
-                        <div class="bg-black">
-                            <Button variant="success">Links</Button>
-                            <Dropdown.Toggle split variant="success" id="dropdown-split-basic" class="w-5 h-5" />
-                        </div>
-                        <Dropdown.Menu>
-                            <div class="flex flex-col">
-                                <Dropdown.Item><Link to="/Code">Code</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to="/ToDo">Apps</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to={special_link}>{special_nav}</Link></Dropdown.Item>
-                            </div>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                    <div class="hidden pr-[5vw] font-semibold">
-                        <Link class="h-fit align-middle px-[1vw] py-[.5vw]" to="/Code">Code</Link>
-                        <Link class="h-fit align-middle px-[1vw] py-[.5vw]" to="/ToDo">Apps</Link>
-                        <Link class="h-fit align-middle px-[1vw] py-[.5vw] bg-button_accent_color" to={special_link}>{special_nav}</Link>
-                    </div>
-                </div>
+            <div class="on_desktop:hidden flex justify-around bg-black w-[90vw] m-auto h-[5vh]">
+                <Link class="h-fit my-auto" to="/">Home</Link>
+                <Link class="h-fit my-auto" to="/Code">Code</Link>
+                <Link class="h-fit my-auto" to="/ToDo">Apps</Link>
+                <Link class="h-fit my-auto" to={special_link}>{special_nav}</Link>
             </div>
         </>
     )
