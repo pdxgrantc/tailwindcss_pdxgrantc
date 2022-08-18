@@ -9,7 +9,7 @@ import HomeScreeenshot from "../../Static/Images/HomeScreenshot.jpg";
 export default function AboutThisSite() {
     return (
         <div class="m-auto bg-main_bg_color text-text_white">
-            <Header title={"About This Site"} />
+            <Header />
             <div class="h-[6vh]"></div>
             <div class="mx-[7vw]">
                 <div class="pr-[5%] w-[100%] flex justify-between bg-black">
