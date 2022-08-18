@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export default function HomeHeader({ title }) {
+import DesktopHeader from './DesktopHeader';
+import MobileHeader from './MobileHeader';
+
+export default function Header({ title }) {
     var special_nav = "About This Site"
     var title_link = "/"
     var special_link = "/About-This-Site"
@@ -18,7 +21,6 @@ export default function HomeHeader({ title }) {
         special_link = "/"
     }
 
-
     return (
         <>
             <div class="on_mobile:hidden">
@@ -31,11 +33,9 @@ export default function HomeHeader({ title }) {
                     </div>
                 </div>
             </div>
+                <DesktopHeader />
             <div class="on_desktop:hidden flex justify-around bg-black w-[90vw] m-auto h-[5vh]">
-                <Link class="h-fit my-auto text-[1.5rem]" to="/">Home</Link>
-                <Link class="h-fit my-auto text-[1.5rem]" to="/Code">Code</Link>
-                <Link class="h-fit my-auto text-[1.5rem]" to="/ToDo">Apps</Link>
-                <Link class="h-fit my-auto text-[1.5rem]" to={special_link}>{special_nav}</Link>
+                <MobileHeader />
             </div>
         </>
     )

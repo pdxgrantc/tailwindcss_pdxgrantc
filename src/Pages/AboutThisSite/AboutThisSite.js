@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "../../Static/partials/HomeHeader";
+import Header from "../../Static/partials/Header";
 import Footer from "../../Static/partials/Footer";
 
 import react from "../../Static/Images/react.jpg";

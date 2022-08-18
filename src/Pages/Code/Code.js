@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "../../Static/partials/HomeHeader";
+import Header from "../../Static/partials/Header";
 import Footer from "../../Static/partials/Footer";
 
 export default function Code() {
