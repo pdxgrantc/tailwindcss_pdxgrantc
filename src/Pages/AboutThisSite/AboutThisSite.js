@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import Header from "../../Static/partials/Header";
 import Footer from "../../Static/partials/Footer";
@@ -9,6 +10,9 @@ import HomeScreeenshot from "../../Static/Images/HomeScreenshot.jpg";
 export default function AboutThisSite() {
     return (
         <>
+            <Helmet>
+                <title>About This Site</title>
+            </Helmet>
             <div class="m-auto bg-main_bg_color text-text_white">
                 <Header />
                 <div class="h-[2vh] on_mobile:h-[2vh]"></div>

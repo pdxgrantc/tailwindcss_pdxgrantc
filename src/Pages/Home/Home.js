@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 
 import Resume from './partials/Resume'
 
@@ -11,6 +12,9 @@ import Grant_Photo from "./Grant-Photo.jpg"
 export default function Home() {
     return (
         <>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <div class="m-auto bg-main_bg_color text-text_white">
                 <Header />
                 <div class="relative on_mobile:mt-[2vh] flex on_mobile:gap-[5vh] on_mobile:flex-col on_mobile:w-[90vw] on_mobile:m-auto on_mobile:h-[90vh]">
