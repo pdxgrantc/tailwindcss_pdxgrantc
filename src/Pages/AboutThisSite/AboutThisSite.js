@@ -28,7 +28,7 @@ export default function AboutThisSite() {
                 <div class="h-[2vh] on_mobile:hidden bg-black"></div>
                 <div class="w-[100%] flex justify-between on_mobile:flex-col bg-black">
                     <img class="h-auto w-[30vw] on_desktop:hidden on_mobile:w-full px-[4vw] m-auto py-[4vh]" src={react} alt="React"></img>
-                    <div class="flex flex-col justify-center gap-5 pb-2 px-[4vw]">
+                    <div class="flex flex-col justify-center gap-5 pb-2 px-[2vw]">
                         <h2 class="text-6xl text-text_blue">Framework</h2>
                         <h3 class="align-middle leading-[1.1] text-[2.5rem] text-wrap">I chose React to develop this site for the ease of getting a modern, responsive, and scaleable user interface.</h3>
                         <h3 class="align-middle leading-[1.1] text-[2.5rem] text-wrap">Compared to my experiences with technologies like EJS or Handlebars React allowed me to bring this site to production much quicker than expected.</h3>
