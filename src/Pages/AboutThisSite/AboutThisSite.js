@@ -37,8 +37,6 @@ export default function AboutThisSite() {
                         <img class="py-[2vh] m-auto h-[58vh] w-auto on_mobile:hidden" src={react} alt="React"></img>
                     </div>
                 </div>
-                
-               
                 <div class="h-[6vh]"></div>
                 <Footer />
             </div>
