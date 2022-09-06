@@ -65,25 +65,25 @@ export default function NewItem() {
   */
 
   return (
-    <>
-      <div class="m-auto bg-main_bg_color text-text_white">
-        <Header />
-        <div class="h-[6vh]"></div>
-        <div class="w-[75%] m-auto flex flex-col justify-center gap-[2.75vh]">
-          <div class="w-full flex flex-col gap-[2.3vh] text-[1.75rem] min-laptop_height:text-[1.5rem] leading-none">
-            <input class="h-[4.75vh] px-[.75vw] py-[.5vh] w-full text-accent_text_color focus:shadow-none focus:outline-none" ref={todoNameRef} type="text" placeholder='Title' />
+    <div class="m-auto bg-main_bg_color text-text_white">
+      <Header />
+      <div class="h-[6vh]"></div>
+      <div class="w-[75%] m-auto flex flex-col justify-center gap-[2.75vh]">
+        <div class="w-full flex flex-col gap-[2.3vh] text-[1.75rem] min-laptop_height:text-[1.5rem] leading-none">
+          <input class="h-[4.75vh] px-[.75vw] py-[.5vh] w-full text-accent_text_color focus:shadow-none focus:outline-none" ref={todoNameRef} type="text" placeholder='Title' />
+          {/*
             <div class="h-[4.75vh] grid grid-cols-3 gap-[1vw] w-full">
               <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={day} type="text" placeholder='Due Day' />
               <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={month} type="text" placeholder='Due Month' />
               <input class="h-full px-[.75vw] py-[.5vh] text-accent_text_color focus:shadow-none focus:outline-none" ref={year} type="text" placeholder='Due Year' />
             </div>
             <textarea class="px-[.75vw] py-[1.5vh] text-accent_text_color focus:shadow-none focus:outline-none min-h-[42vh]" ref={description} placeholder="Description" cols="30" rows="12"></textarea>
-          </div>
-          <button class="text-4xl font-semibold py-[.95vh] w-fit m-auto border-b-[2.5px] hover:bg-button_accent_color hover:ease-[cubic-bezier(0.4, 0, 1, 1)] duration-[350ms] hover:px-[1.5vw]" onClick={handleAddTodo}>Submit</button>
+            */}
         </div>
-        <div class="mb-[4vh]"></div>
-        <Footer />
-      </div >
-    </>
+        <button class="text-4xl font-semibold py-[.95vh] w-fit m-auto border-b-[2.5px] hover:bg-button_accent_color hover:ease-[cubic-bezier(0.4, 0, 1, 1)] duration-[350ms] hover:px-[1.5vw]" onClick={handleAddTodo}>Submit</button>
+      </div>
+      <div class="mb-[4vh]"></div>
+      <Footer />
+    </div >
   )
 }

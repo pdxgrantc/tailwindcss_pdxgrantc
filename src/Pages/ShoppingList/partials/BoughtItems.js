@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function CurrentItems() {
-    return (
-        <div class="bg-black w-1/2 px-[2vw] py-[2vh]">
+export default function BoughtItems() {
+  return (
+    <div class="bg-black px-[2vw] py-[2vh]">
             <div class="flex justify-between gap-5">
                 <div class="flex flex-col">
                     <div class="text-3xl">
@@ -121,6 +121,5 @@ export default function CurrentItems() {
                 </div>
             </div>
         </div>
-
-    )
+  )
 }
